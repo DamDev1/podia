@@ -106,7 +106,7 @@ header nav .navbar_items .navbar_btn .sign_up {
   header nav .navbar_items {
     position: absolute;
     display: block;
-    margin-top: -100%;
+    margin-top: -200%;
     -webkit-transition: 2s ease;
     transition: 2s ease;
   }
