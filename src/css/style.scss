@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{
+    padding: 1.5em;
+    
+    nav{
+        display: flex;
+        justify-content: space-between;
+
+        .nav_logo{
+            
+            .logo{
+               
+            }
+            
+            .logoText{
+                font-size: 25px;
+                margin-left: 5px;
+
+                a{
+                    text-decoration: none;
+                    font-weight: bolder;
+                    color: black;
+                }
+            }
+        }
+
+        .navbar_toggle{
+            font-size: 30px;
+            display: none;
+            cursor: pointer;
+        }
+
+        .navbar_items{
+            display: flex;
+            justify-content: space-between;
+
+            .navbar_links{
+                text-decoration: none;
+                list-style: none;
+                padding: 1.5em;
+                font-weight: bold;
+
+                a{
+                    text-decoration: none;
+                    color: #999696;
+                }
+            }
+
+            .navbar_links:nth-child(1){
+                position: relative;
+                a{
+                    color: #6C2DD3;
+                }
+            }
+
+            // .navbar_links:nth-child(1)::after{
+            //     width: 10px;
+            //     height: 10px;
+            //     color: #6C2DD3;
+            //     content: '';
+            //     position: absolute;
+            // }
+
+            .navbar_btn{
+                margin-top: 10px;
+                margin-left: 2em;
+                .btn{
+                    padding: 15px 20px;
+                    border: 0;
+                    border-radius: 10px;
+                    cursor: pointer;
+                }
+
+                .log_in{
+                    background: transparent;
+                    border: 2px solid #6C2DD3;
+                    font-weight: bold;
+                }
+
+                .log_in:hover{
+                    background: #6C2DD3;
+                    color: white;
+                    transition: 0.5s;
+                }
+
+                .sign_up{
+                    background: #6C2DD3;
+                    color: white;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
+
+
+@media(max-width: 900px){
+    header{
+
+        nav{
+
+            .navbar_toggle{
+                display: block;
+            }
+
+            .navbar_items{
+                position: absolute;
+                display: block;
+                margin-top: -100%;
+                transition: 2s ease;
+
+                .navbar_btn{
+                    margin-left: 20px;
+                    display: block;
+
+                    .btn{
+                        padding: 15px 50px;
+                    }
+
+                    .log_in{
+                        display: block;
+                    }
+
+                    .sign_up{
+                        margin-top: 10px;
+                        margin-left: 0;
+                    }
+                }
+            }
+
+            .active{
+                margin-top: 10%;
+            }
+            
+        }
+    }
+}
