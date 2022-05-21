@@ -118,7 +118,7 @@ header{
         display: flex;
         justify-content: space-between;
         .showcase_text{
-            margin-top: 5rem;
+            margin-top: 2rem;
             p{
                 font-weight: bold;
                 color: #999696;
@@ -175,6 +175,7 @@ header{
             background-position: center;
             background-repeat: no-repeat;
             background-size: contain;
+            margin-top: -2em;
         }
     
     }
@@ -217,7 +218,7 @@ header{
 .different{
     background: #060220;
     padding: 2em;
-    height: 35em;
+    height: 100vh;
     padding-top: 5em;
     display: grid;
     grid-template-columns: 50% 50%;
@@ -225,7 +226,7 @@ header{
 
     .diff_image{
         width: 100%;
-        height: 30em;
+        height: 50vw;
         background: url("../image/Screenshot\ 2022-05-06\ 141308.png");
         background-position: center;
         background-repeat: no-repeat;
@@ -282,9 +283,11 @@ header{
         margin-top: 2em;
         .podcast{
             width: 70%;
-            background:red;
+            background: white;
+            box-shadow: 5px 20px 20px 5px rgba(128, 128, 128, 0.397);
             padding: 1.5em;
             margin: 20px;
+            border-radius: 20px;
     
             .top{
                 display: flex;
@@ -316,17 +319,88 @@ header{
             .podcast_img{
                 width: 100%;
                 height: 15em;
-                background: blue;
+                background: url("../image/kiryl-qHe0USX8z8o-unsplash.jpg");
                 margin-top: 20px;
                 border-radius: 20px;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
             }
+
+            .podcast_txt{
+                margin-top: 10px;
+
+                p{
+                    margin-top: 5px;
+                }
+            }
+        }
+
+        .podcast:nth-child(2){
+            
+            .podcast_img{
+                background: url("../image/mike-meyers--haAxbjiHds-unsplash.jpg");
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            } 
+        }
+
+        .podcast:nth-child(3){
+            
+            .podcast_img{
+                background: url("../image/mykhailo-kopyt-0V_tGgxCeFw-unsplash.jpg");
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            } 
+        }
+
+        .podcast:nth-child(4){
+            
+            .podcast_img{
+                background: url("../image/tezos--JjhlVVrbjU-unsplash.jpg");
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            } 
+        }
+
+        .podcast:nth-child(5){
+            
+            .podcast_img{
+                background: url("../image/sumaid-pal-singh-bakshi-sJKGjk3Pb4M-unsplash.jpg");
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            } 
+        }
+
+        .podcast:nth-child(6){
+            
+            .podcast_img{
+                background: url("../image/siednji-leon-CRdRKHvDyrE-unsplash.jpg");
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            } 
+        }
+
+        .podcast:nth-child(7){
+            
+            .podcast_img{
+                background: url("../image/adam-neumann-2bYIh3rg6hI-unsplash.jpg");
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            } 
         }
     }
     
 }
 
 
-@media(max-width: 852px){
+@media(max-width: 851px){
     header{
 
         nav{
@@ -354,11 +428,12 @@ header{
             display: flex;
             justify-content: space-between;
             .showcase_text{
-                margin-top: 3em;
+                margin-top: 2em;
                 p{
                     font-weight: bold;
                     color: #999696;
                     font-size: 18px;
+
     
                     span{
                         color: #6C2DD3;
@@ -377,7 +452,7 @@ header{
                 }
     
                 .showcase_btn{
-                    margin-top: 20px;
+                    margin-top: 30px;
                     display: flex;
     
                     button{
@@ -410,6 +485,13 @@ header{
                 
             }
         
+        }
+    }
+
+    .different{
+
+        .diff_image{
+            margin-top: 50px;
         }
     }
 }
@@ -568,7 +650,11 @@ header{
 
     .different{
         display: block;
-        height: 62em;
+        height: 100%;
+
+        .diff_image{
+            height: 35em;
+        }
 
         .diff_item{
             margin-left: 2em;
@@ -580,7 +666,21 @@ header{
 
         .podcast_Item{
            display: grid;
-           grid-template-columns: auto auto;
+           grid-template-columns: auto;
+
+           .podcast{
+               width: 50vw;
+               margin-left: auto;
+               margin-right: auto;
+
+               .podcast_txt{
+                   margin-top: 10px;
+
+                   p{
+                       margin-top: 5px;
+                   }
+               }
+           }
            
             .podcast:nth-child(4){
                 display: none;
