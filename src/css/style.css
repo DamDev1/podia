@@ -618,5 +618,35 @@ header nav .navbar_items .navbar_btn .sign_up {
   .top_podcast .podcast_Item .podcast:nth-child(7) {
     display: none;
   }
+  .what_pple_say {
+    padding: 2em;
+    padding-top: 4em;
+  }
+  .what_pple_say h1 {
+    text-align: center;
+  }
+  .what_pple_say .tweet {
+    margin-top: 30px;
+    background: #060220;
+    padding: 1em;
+    color: white;
+    border-radius: 10px;
+  }
+  .what_pple_say .tweet .tweet_img_container p {
+    font-size: 12px;
+  }
+  .what_pple_say .tweet .tweet_img_container .tweet_img {
+    width: 20vw;
+    height: 20vw;
+    background: url("../image/20210909_215242.jpg");
+    border-radius: 50%;
+    margin-top: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .what_pple_say .tweet .tweet_text {
+    margin-top: 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
