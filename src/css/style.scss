@@ -218,8 +218,8 @@ header{
 .different{
     background: #060220;
     padding: 2em;
-    height: 100vh;
-    padding-top: 5em;
+    padding-top: 3em;
+    padding-bottom: 5em;
     display: grid;
     grid-template-columns: 50% 50%;
     color: white;
@@ -397,6 +397,42 @@ header{
         }
     }
     
+}
+
+.what_pple_say{
+    padding: 2em;
+
+    h1{
+        text-align: center;
+    }
+
+    .tweet{
+        padding: 2em;
+        box-shadow: 3px 3px 5px 5px rgba(122, 122, 122, 0.26);
+        max-width: 800px;
+        border-radius: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 3em;
+
+        .tweet_img{
+            width: 10vw;
+            height: 10vw;
+            border-radius: 50%;
+            background: url("../image/20210909_215242.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .tweet_text{
+            margin-top: 10px;
+
+            h3{
+                margin-top: 5px;
+            }
+        }
+    }
 }
 
 
@@ -711,10 +747,9 @@ header{
 
         .tweet{
             margin-top: 30px;
-            background: #060220;
             padding: 1em;
-            color: white;
             border-radius: 10px;
+            box-shadow: 3px 3px 5px 5px rgba(122, 122, 122, 0.26);
 
             .tweet_img_container{
                 p{
@@ -733,7 +768,13 @@ header{
             }
 
             .tweet_text{
-                margin-top: 10px;
+                margin-top: 20px;
+                p{
+                    font-size: 12px;
+                }
+                h3{
+                    font-size: 13px;
+                }
             }
         }
     }

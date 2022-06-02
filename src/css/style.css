@@ -213,8 +213,8 @@ header nav .navbar_items .navbar_btn .sign_up {
 .different {
   background: #060220;
   padding: 2em;
-  height: 100vh;
-  padding-top: 5em;
+  padding-top: 3em;
+  padding-bottom: 5em;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 50% 50%;
@@ -385,6 +385,43 @@ header nav .navbar_items .navbar_btn .sign_up {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.what_pple_say {
+  padding: 2em;
+}
+
+.what_pple_say h1 {
+  text-align: center;
+}
+
+.what_pple_say .tweet {
+  padding: 2em;
+  -webkit-box-shadow: 3px 3px 5px 5px rgba(122, 122, 122, 0.26);
+          box-shadow: 3px 3px 5px 5px rgba(122, 122, 122, 0.26);
+  max-width: 800px;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3em;
+}
+
+.what_pple_say .tweet .tweet_img {
+  width: 10vw;
+  height: 10vw;
+  border-radius: 50%;
+  background: url("../image/20210909_215242.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.what_pple_say .tweet .tweet_text {
+  margin-top: 10px;
+}
+
+.what_pple_say .tweet .tweet_text h3 {
+  margin-top: 5px;
 }
 
 @media (max-width: 851px) {
@@ -627,10 +664,10 @@ header nav .navbar_items .navbar_btn .sign_up {
   }
   .what_pple_say .tweet {
     margin-top: 30px;
-    background: #060220;
     padding: 1em;
-    color: white;
     border-radius: 10px;
+    -webkit-box-shadow: 3px 3px 5px 5px rgba(122, 122, 122, 0.26);
+            box-shadow: 3px 3px 5px 5px rgba(122, 122, 122, 0.26);
   }
   .what_pple_say .tweet .tweet_img_container p {
     font-size: 12px;
@@ -646,7 +683,13 @@ header nav .navbar_items .navbar_btn .sign_up {
     background-size: cover;
   }
   .what_pple_say .tweet .tweet_text {
-    margin-top: 10px;
+    margin-top: 20px;
+  }
+  .what_pple_say .tweet .tweet_text p {
+    font-size: 12px;
+  }
+  .what_pple_say .tweet .tweet_text h3 {
+    font-size: 13px;
   }
 }
 /*# sourceMappingURL=style.css.map */
